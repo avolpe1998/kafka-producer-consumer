@@ -1,7 +1,6 @@
 package com.example.demo.run;
 
 import com.example.demo.service.OrderProducerService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
