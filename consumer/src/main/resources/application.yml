@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      # A Group ID is required. It tells Kafka this service is part of the "inventory" group
+      group-id: inventory-service-group
+      # How to decode (deserialize) the incoming message back into Strings
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      # Start reading from the earliest available message if no offset is found
+      auto-offset-reset: earliest
